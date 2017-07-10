@@ -2,9 +2,9 @@
 'use strict';
 
 module.exports = function(environment) {
-  let ENV = {
+  var ENV = {
     modulePrefix: 'app-ember',
-    environment,
+    environment: environment,
     rootURL: '/',
     locationType: 'auto',
     EmberENV: {
@@ -16,6 +16,13 @@ module.exports = function(environment) {
         // Prevent Ember Data from overriding Date.parse.
         Date: false
       }
+    },
+
+    firebase: {
+      apiKey: "AIzaSyA4iaa-YwpsyCcV8IVN8l4aMdFNkLqapyo",
+      authDomain: "super-rentals-84b52.firebaseapp.com",
+      databaseURL: "https://super-rentals-84b52.firebaseio.com",
+      storageBucket: "super-rentals-84b52.appspot.com"
     },
 
     APP: {
